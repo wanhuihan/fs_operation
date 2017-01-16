@@ -1,0 +1,11 @@
+#page-container.no-login.sidebar-l.sidebar-o {
+  padding-left: 0; }
+
+#page-container.no-login #sidebar {
+  display: none; }
+
+#page-container.no-login #header-navbar {
+  display: none; }
+
+#page-container.no-login #main-container .login {
+  float: none; }

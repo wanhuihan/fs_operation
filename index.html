@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>OneUI - shared on GFXFree.Net</title>
+
+        <meta name="description" content="OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+          <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
+
+        <!-- OneUI CSS framework -->
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body ng-app="fs">
+        <!-- Page Container -->
+        <!--
+            Available Classes:
+
+            'sidebar-l'                  Left Sidebar and right Side Overlay
+            'sidebar-r'                  Right Sidebar and left Side Overlay
+            'sidebar-mini'               Mini hoverable Sidebar (> 991px)
+            'sidebar-o'                  Visible Sidebar by default (> 991px)
+            'sidebar-o-xs'               Visible Sidebar by default (< 992px)
+
+            'side-overlay-hover'         Hoverable Side Overlay (> 991px)
+            'side-overlay-o'             Visible Side Overlay by default (> 991px)
+
+            'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
+
+            'header-navbar-fixed'        Enables fixed header
+        -->
+
+        <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
+ 
+            <nav id="sidebar" ui-view="sideBar">
+                
+            </nav> 
+
+            <header id="header-navbar" ui-view="header" class="content-mini content-mini-full">
+                
+            </header>
+
+            <!-- Main Container -->
+            <main id="main-container" ui-view="main">
+
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <div ui-view="footer">
+                
+            </div>        
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+        <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+
+        
+
+        <!-- angularJs start -->
+        <script type="text/javascript" src="assets/js/angular/angular/angular.js"></script>
+        <script type="text/javascript" src="assets/js/angular/angular/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="assets/js/angular/angular-loading-bar/loading-bar.js"></script>
+        <script type="text/javascript" src="assets/js/angular/angular/angular-cookies.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/js/angular/angular-loading-bar/loading-bar.css">
+
+        <script type="text/javascript" src="assets/js/angular/ngDialog/ngDialog.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="assets/js/angular/ngDialog/ngDialog.css">
+        
+        <!-- angularJs end -->
+
+        <script src="assets/js/app.js"></script>
+        
+        <script type="text/javascript" src="assets/js/controller/loginController.js"></script>
+
+        <script type="text/javascript" src="assets/js/controller/dashboardController.js"></script>
+
+        <script type="text/javascript" src="assets/js/router.js"></script>
+
+
+        <!-- Page Plugins -->
+        <script src="assets/js/plugins/slick/slick.min.js"></script>
+        <script src="assets/js/plugins/chartjs/Chart.min.js"></script>
+
+        <!-- Page JS Code -->
+        <script src="assets/js/pages/base_pages_dashboard.js"></script>
+        <script>
+            $(function () {
+                // Init page helpers (Slick Slider plugin)
+                App.initHelpers('slick');
+            });
+        </script>
+    </body>
+</html>

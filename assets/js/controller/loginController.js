@@ -1,13 +1,14 @@
 
 // 
 
-fs.controller("login", function($scope, $http, $location, $cookies) {
+fs.controller("login", function($scope, $http, $location, $cookies, fs) {
 
 	if (g.cookieChk()) {
 
 		$location.path("/dashboard");
 
 	} else {
+
 
 		var loginBtn = angular.element(document.querySelector(".login .btn"));
 
@@ -16,7 +17,7 @@ fs.controller("login", function($scope, $http, $location, $cookies) {
 			// console.log($location);
 			jQuery.cookie(g.cookie,'test');
 
-			// console.log($cookies);
+			// return false;
 			
 			$location.path("/dashboard");
 

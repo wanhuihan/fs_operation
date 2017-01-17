@@ -1,14 +1,15 @@
 
-fs.controller("dashboard", function($scope, $location, $http) {
+fs.controller("dashboard", function($scope, $location, $http, fs) {
 
-	console.log('456');
+	// console.log(fs.cookieCheck());
+	if (fs.cookieCheck()) {
 
-	if (g.cookieChk()) {
+	} else {
 
-		return;
+		$location.path("login");
 
-	} 
+	}
 
-	console.log(123)
+	// console.log(123)
 
 })

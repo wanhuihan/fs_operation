@@ -45,17 +45,17 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
         views: {
 
-            'sideBar': {
+            'sideBar@': {
 
                 templateUrl: '../../templates/sideBar.html'
             },
 
-            'header': {
+            'header@': {
 
                 templateUrl: '../../templates/header.html'
             },
 
-            'main': {
+            'main@': {
                 templateUrl: '../../templates/dashboard.html',
                 // controller: 'navigation'
                 controller: 'dashboard'

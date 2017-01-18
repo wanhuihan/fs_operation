@@ -56,7 +56,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             },
 
             'main@': {
-                templateUrl: '../../templates/dashboard.html',
+                templateUrl: '../../templates/provider.html',
                 // controller: 'navigation'
                 controller: 'dashboard'
             },

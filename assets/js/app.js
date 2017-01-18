@@ -141,6 +141,7 @@ var App = function() {
 
                 // If sidebar scrolling does not exist init it..
                 if ($lSidebarScroll.length && (!$lSidebarScroll.parent('.slimScrollDiv').length)) {
+                    
                     $lSidebarScroll.slimScroll({
                         height: $lSidebar.outerHeight(),
                         color: '#fff',
@@ -302,7 +303,11 @@ var App = function() {
     // Main navigation functionality
     var uiNav = function() {
         // When a submenu link is clicked
-        jQuery('[data-toggle="nav-submenu"]').on('click', function(e){
+
+        // jQuery("body").on("click", jQuery('[data-toggle="nav-submenu"]'), function() {
+        //     alert(123)
+        // })
+        jQuery(document).on("click", '[data-toggle="nav-submenu"]', function(e) {
             // Stop default behaviour
             e.stopPropagation();
 
@@ -329,6 +334,7 @@ var App = function() {
                 $link.blur();
             }
         });
+
     };
 
     // Blocks options functionality

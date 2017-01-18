@@ -62,30 +62,6 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             },
         },
     })
-    // provider page
-    $stateProvider.state("dashboard.provider", {
-        url: '/provider',
-        resolve: {
-
-        },
-
-        views: {
-
-            'sideBar@': {
-
-                templateUrl: '../../templates/sideBar.html'
-            },
-
-            'header@': {
-
-                templateUrl: '../../templates/header.html'
-            },
-            "main@": {
-
-                templateUrl: '../../templates/provider.html',
-                // controller: 'provider'
-            },           
-        }
-    })
+    
 
 })

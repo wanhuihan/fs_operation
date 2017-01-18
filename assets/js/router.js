@@ -16,16 +16,6 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
         views: {
 
-            // 'sideBar': {
-
-            //     templateUrl: '../../templates/sideBar.html'
-            // },
-
-            // 'header': {
-
-            //     templateUrl: '../../templates/header.html'
-            // },
-
             'main': {
                 templateUrl: '../../templates/users/login.html',
                 // controller: 'navigation'
@@ -52,7 +42,17 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
             'header@': {
 
-                templateUrl: '../../templates/header.html'
+                templateUrl: '../../templates/header.html',
+
+                controller: function() {
+
+                   jQuery(function(){ 
+
+                        console.log(App.init());
+
+                   })
+
+                }
             },
 
             'main@': {

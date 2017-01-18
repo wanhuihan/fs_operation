@@ -304,10 +304,8 @@ var App = function() {
     var uiNav = function() {
         // When a submenu link is clicked
 
-        // jQuery("body").on("click", jQuery('[data-toggle="nav-submenu"]'), function() {
-        //     alert(123)
-        // })
-        jQuery(document).on("click", '[data-toggle="nav-submenu"]', function(e) {
+        jQuery(document).on('click', '[data-toggle="nav-submenu"]', function(e){    
+
             // Stop default behaviour
             e.stopPropagation();
 
@@ -1177,4 +1175,4 @@ var g = {
 var fs = angular.module("fs", ["ui.router", 'angular-loading-bar','ngDialog', 'ngCookies']);
 
 // Initialize app when page loads
-jQuery(function(){ App.init(); });
+// jQuery(function(){ App.init(); });

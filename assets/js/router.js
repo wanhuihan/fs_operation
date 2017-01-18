@@ -44,15 +44,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
                 templateUrl: '../../templates/header.html',
 
-                controller: function() {
-
-                   jQuery(function(){ 
-
-                        console.log(App.init());
-
-                   })
-
-                }
+                controller: "header"
             },
 
             'main@': {

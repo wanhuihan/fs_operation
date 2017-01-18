@@ -13,18 +13,3 @@ fs.controller("dashboard", function($scope, $location, $http, fs) {
 	// console.log(123)
 
 })
-fs.controller("provider", function($scope, $http, $location, $cookies, $window) {
-
-	// alert($cookies.fs_designer_token)
-	$scope.leftSideBar = false;
-
-
-	// console.log($cookies.fs_designer_token);
-	if (!g.chkCookie()) {
-		$location.path("/login");
-	} else {
-		$window.location.href = '#/dashboard/provider';
-		$window.location.reload();
-	}
-
-})

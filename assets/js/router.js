@@ -48,12 +48,70 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             },
 
             'main@': {
-                templateUrl: '../../templates/provider.html',
+                templateUrl: '../../templates/dashboard.html',
                 // controller: 'navigation'
                 controller: 'dashboard'
             },
         },
     })
     
+     $stateProvider.state('provider', {
+
+        url: '/provider',
+
+        resolve: {
+
+        },
+
+        views: {
+
+            'sideBar@': {
+
+                templateUrl: '../../templates/sideBar.html'
+            },
+
+            'header@': {
+
+                templateUrl: '../../templates/header.html',
+
+                controller: "header"
+            },
+
+            'main@': {
+                templateUrl: '../../templates/provider.html',
+                // controller: 'navigation'
+                controller: 'provider'
+            },
+        },
+    })
+     $stateProvider.state('providerDetails', {
+
+        url: '/providerDetails',
+
+        resolve: {
+
+        },
+
+        views: {
+
+            'sideBar@': {
+
+                templateUrl: '../../templates/sideBar.html'
+            },
+
+            'header@': {
+
+                templateUrl: '../../templates/header.html',
+
+                controller: "header"
+            },
+
+            'main@': {
+                templateUrl: '../../templates/provider_details.html',
+                // controller: 'navigation'
+                // controller: 'provider'
+            },
+        },
+    })
 
 })

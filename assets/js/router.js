@@ -67,7 +67,8 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
             'sideBar@': {
 
-                templateUrl: '../../templates/sideBar.html'
+                templateUrl: '../../templates/sideBar.html',
+                 controller: "header"
             },
 
             'header@': {
@@ -80,13 +81,14 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             'main@': {
                 templateUrl: '../../templates/provider.html',
                 // controller: 'navigation'
-                controller: 'provider'
+                // controller: 'provider'
             },
         },
     })
-     $stateProvider.state('providerDetails', {
 
-        url: '/providerDetails',
+     $stateProvider.state('provider.details', {
+
+        url: '/details',
 
         resolve: {
 
@@ -94,24 +96,59 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
         views: {
 
-            'sideBar@': {
+            // 'sideBar': {
 
-                templateUrl: '../../templates/sideBar.html'
-            },
+            //     templateUrl: '../../templates/sideBar.html',
 
-            'header@': {
 
-                templateUrl: '../../templates/header.html',
+            // },
 
-                controller: "header"
-            },
+            // 'header@': {
+
+            //     templateUrl: '../../templates/header.html',
+
+            //     controller: "header"
+            // },
 
             'main@': {
                 templateUrl: '../../templates/provider_details.html',
                 // controller: 'navigation'
-                // controller: 'provider'
+                controller: function() {
+                    g.domReady();                  
+                }
             },
         },
     })
+
+    // $stateProvider.state('providerDetails', {
+
+    //     url: '/providerDetails',
+
+    //     resolve: {
+
+    //     },
+
+    //     views: {
+
+    //         'sideBar@': {
+
+    //             templateUrl: '../../templates/sideBar.html'
+    //         },
+
+    //         'header@': {
+
+    //             templateUrl: '../../templates/header.html',
+
+    //             controller: "header"
+    //         },
+
+    //         'main@': {
+    //             templateUrl: '../../templates/provider_details.html',
+    //             // controller: 'navigation'
+    //             // controller: 'provider'
+    //         },
+    //     },
+    // })
+
 
 })

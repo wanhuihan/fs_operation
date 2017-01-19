@@ -1168,8 +1168,17 @@ var g = {
             // window.location.href = "/login";
         }
 
+    },
 
+    domReady: function() {
+        jQuery(function(){ 
+
+            App.init();
+
+        })
     }
+
+
 }
 
 var fs = angular.module("fs", ["ui.router", 'angular-loading-bar','ngDialog', 'ngCookies']);

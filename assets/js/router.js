@@ -120,35 +120,37 @@ fs.config(function($stateProvider, $urlRouterProvider) {
         },
     })
 
-    // $stateProvider.state('providerDetails', {
+    $stateProvider.state('appeal', {
 
-    //     url: '/providerDetails',
+        url: '/appeal',
 
-    //     resolve: {
+        resolve: {
 
-    //     },
+        },
 
-    //     views: {
+        views: {
 
-    //         'sideBar@': {
+            'sideBar@': {
 
-    //             templateUrl: '../../templates/sideBar.html'
-    //         },
+                templateUrl: '../../templates/sideBar.html',
+                 controller: "header"
+            },
 
-    //         'header@': {
+            'header@': {
 
-    //             templateUrl: '../../templates/header.html',
+                templateUrl: '../../templates/header.html',
 
-    //             controller: "header"
-    //         },
+                controller: "header"
+            },
 
-    //         'main@': {
-    //             templateUrl: '../../templates/provider_details.html',
-    //             // controller: 'navigation'
-    //             // controller: 'provider'
-    //         },
-    //     },
-    // })
-
+            'main@': {
+                templateUrl: '../../templates/appeal.html',
+                // controller: 'navigation'
+                controller: function() {
+                    g.domReady();                  
+                }
+            },
+        },
+    })
 
 })

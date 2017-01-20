@@ -74,6 +74,110 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <button type="button" class="btn btn-primary">编辑</button>
+
+                            <!-- 弹窗 修改供应商信息-->
+                            <div class="chproviderinfo">
+                                <div class="block">
+                                    <div class="block-content block-content-narrow">
+                                        <form class="js-validation-bootstrap form-horizontal" action="" method="post">
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-username">供应商类型<span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="text" id="val-username" name="val-username">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-email">供应商名称<span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="text" id="val-email" name="val-email" placeholder="Enter your valid email..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-password">联系人 <span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="password" id="val-password" name="val-password" placeholder="Choose a good one..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-password">联系电话 <span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="password" id="val-password" name="val-password" placeholder="Choose a good one..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-confirm-password">联系人职位<span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="password" id="val-confirm-password" name="val-confirm-password" placeholder="..and confirm it to be safe!">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-confirm-password">联系人邮件<span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="password" id="val-confirm-password" name="val-confirm-password" placeholder="..and confirm it to be safe!">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-password">供应商座机 <span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="password" id="val-password" name="val-password" placeholder="Choose a good one..">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-skill">供货类型<span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <select class="form-control" id="val-skill" name="val-skill">
+                                                        <option value="">全部</option>
+                                                        <option value="html">主材</option>
+                                                        <option value="css">辅材</option>
+                                                        <option value="javascript">机具</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-website">登录名 <span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="text" id="val-website" name="val-website" placeholder="http://example.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-md-4 control-label" for="val-digits">登录密码 <span class="text-danger">*</span></label>
+                                                <div class="col-md-7">
+                                                    <input class="form-control" type="text" id="val-digits" name="val-digits" placeholder="3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label class=" col-md-2 control-label" for="val-password">所属区域</label>
+                                                <label class="css-input css-radio css-radio-success push-10-r">
+                                                    <input type="radio" name="radio-group4" checked><span></span> 北京
+                                                </label>
+                                                <label class="css-input css-radio css-radio-success">
+                                                    <input type="radio" name="radio-group4"><span></span> 上海
+                                                </label>
+                                                <label class="css-input css-radio css-radio-success">
+                                                    <input type="radio" name="radio-group4"><span></span> 南京
+                                                </label>
+                                                <label class="css-input css-radio css-radio-success">
+                                                    <input type="radio" name="radio-group4"><span></span> 重庆
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label class="col-md-2 control-label" for="val-suggestions">备注 <span class="text-danger">*</span></label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="8" placeholder="Share your ideas with us.."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-7 col-md-offset-5">
+                                                    <button class="btn btn-sm btn-primary" type="submit">确认修改</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane" id="btabs-alt-static-supply">
                             <table class="table table-bordered table-striped js-dataTable-full">
@@ -98,7 +202,7 @@
                                         <td class="hidden-xs">诺顿</td>
                                         <td class="hidden-xs">15*42*16cm</td>
                                         <td class="hidden-xs">1465.88</td> 
-                                        <td class="hidden-xs"><a href="">查看</a><a href="">编辑</a><a href="">删除</a></td>
+                                        <td class="hidden-xs"><a href="">查看</a><a href="">删除</a></td>
                                     </tr>
                                    <tr>
                                         <td class="text-center">手持花洒带支架软管</td>
@@ -108,7 +212,7 @@
                                         <td class="hidden-xs">诺顿</td>
                                         <td class="hidden-xs">15*42*16cm</td>
                                         <td class="hidden-xs">1465.88</td> 
-                                        <td class="hidden-xs"><a href="">查看</a><a href="">编辑</a><a href="">删除</a></td>
+                                        <td class="hidden-xs"><a href="">查看</a><a href="">删除</a></td>
                                     </tr>
                                    <tr>
                                         <td class="text-center">手持花洒带支架软管</td>
@@ -118,202 +222,563 @@
                                         <td class="hidden-xs">诺顿</td>
                                         <td class="hidden-xs">15*42*16cm</td>
                                         <td class="hidden-xs">1465.88</td> 
-                                        <td class="hidden-xs"><a href="">查看</a><a href="">编辑</a><a href="">删除</a></td>
+                                        <td class="hidden-xs"><a href="">查看</a><a href="">删除</a></td>
                                     </tr>
                                 </tbody>
-                            </table>        
+                            </table>
+
+                            <!-- 查看  供货信息-->
+                            <div class="lprovidergoodsinfo">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th>商品名称</th>
+                                            <td>主入户门</td>
+                                            <th>商品编号</th>
+                                            <td>SMW2016254879</td>
+                                            <th>商品型号</th>
+                                            <td>SMW254</td>
+                                        </tr>
+                                        <tr>
+                                            <th>商品分类</th>
+                                            <td>主材-甲供主材-入户门</td>
+                                            <th>商品品牌</th>
+                                            <td>霍曼（北京）贸易有限公司</td>
+                                            <th>商品供应商</th>
+                                            <td>霍曼（北京）贸易有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <th>商品单价</th>
+                                            <td>￥2500.00</td>
+                                            <th>商品规格</th>
+                                            <td>15*150*25 cm</td>
+                                            <th>施工阶段</th>
+                                            <td>基础装修</td>
+                                        </tr>
+                                        <tr>
+                                            <th>添加人</th>
+                                            <td>张楠</td>
+                                            <th>添加时间</th>
+                                            <td>2016-05-16 15:12:56</td>
+                                            <th>备注</th>
+                                            <td>霍曼（北京）贸易有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <th>商品图片</th>
+                                            <td colspan="5">
+                                            <img src="" alt="">
+                                            <img src="" alt="">
+                                            <img src="" alt="">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="tab-pane" id="btabs-alt-static-orders">
-                            <!-- Dynamic Table Full -->
-                            <div class="block">
-                                <div class="block-content">
-                                    <table class="table table-bordered table-striped js-dataTable-full">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">订单号</th>
-                                                <th>下单时间</th>
-                                                <th class="hidden-xs">收货人</th>
-                                                <th class="hidden-xs" style="width: 15%;">总金额（元）</th>
-                                                <th class="text-center" style="width: 10%;">订单状态</th>
-                                                <th>所属区域</th>
-                                                <th>供应商</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
+                            <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
+                                <div class="form-group">
+                                    <label  for="example-if-email">订单号</label>
+                                    <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" >
+                                </div>
+                                <div class="form-group">
+                                    <label  for="example-if-email">供应商</label>
+                                    <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label  for="example-if-password">下单时间</label>
+                                    <input class="form-control" type="text" id="example-if-password" name="example-if-password" >-
+                                    <input class="form-control" type="text" id="example-if-password" name="example-if-password" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="example-select">订单状态</label>
+                                    <select class="form-control" id="example-select" name="example-select" size="1">
+                                        <option value="0">全部</option>
+                                        <option value="1">待发货</option>
+                                        <option value="2">已发货</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary" type="submit">查询</button>
+                                    <button class="btn btn-primary" type="submit">重置</button>
+                                </div>
+                            </form>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" style="width: 50px;">#</th>
+                                        <th>退换货订单号</th>
+                                        <th class="hidden-xs" >订单号</th>
+                                        <th class="text-center" >退货时间</th>
+                                        <th>退货人</th>
+                                        <th>审批状态</th>
+                                        <th>所属区域</th>
+                                        <th>供应商</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>SMW48575468959</td>
+                                        <td class="hidden-xs">SMWTHH85425155</td>
+                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td>张佳</td>
+                                        <td>待审核</td>
+                                        <td>重庆</td>
+                                        <td>重庆飘瑞斯特贸易有限公司</td>
+                                        <td><a href="">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td>SMW48575468959</td>
+                                        <td class="hidden-xs">SMWTHH85425155</td>
+                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td>张佳</td>
+                                        <td>审核通过</td>
+                                        <td>重庆</td>
+                                        <td>重庆飘瑞斯特贸易有限公司</td>
+                                        <td><a href="">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td>SMW48575468959</td>
+                                        <td class="hidden-xs">SMWTHH85425155</td>
+                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td>张佳</td>
+                                        <td>审核拒绝</td>
+                                        <td>重庆</td>
+                                        <td>重庆飘瑞斯特贸易有限公司</td>
+                                        <td><a href="">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td>SMW48575468959</td>
+                                        <td class="hidden-xs">SMWTHH85425155</td>
+                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td>张佳</td>
+                                        <td>待审核</td>
+                                        <td>重庆</td>
+                                        <td>重庆飘瑞斯特贸易有限公司</td>
+                                        <td><a href="">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- 订单信息查看-未完成 -->
+                            <div class="oinfounc">
+                                <div>
+                                    <h4>订单详情</h4>
+                                    <table class="table table-bordered">
                                         <tbody>
                                             <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">待发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
+                                                <th>订单状态</th>
+                                                <td>未完成</td>
+                                                <th>订单号</th>
+                                                <td>SMW48575468959</td>
+                                                <th>下单时间</th>
+                                                <td>2016-08-10 09：45：10</td>
                                             </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">已发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
+                                            <tr>
+                                                <th>收货人</th>
+                                                <td>张佳</td>
+                                                <th>收货电话</th>
+                                                <td>13659875412</td>
+                                                <th>收货地址</th>
+                                                <td>重庆市</td>
                                             </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">待发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">已发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
+                                            <tr>
+                                                <th>进场时间</th>
+                                                <td>2016-08-17</td>
+                                                <th>所属区域</th>
+                                                <td>重庆</td>
+                                                <th>供应商</th>
+                                                <td>重庆飘瑞斯特贸易有限公司</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <div>
+                                    <h4>商品信息</h4>
+                                    <div class="table-responsive push-50">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center" style="width: 50px;"></th>
+                                                    <th>商品名称</th>
+                                                    <th class="text-center" style="width: 100px;">商品编号</th>
+                                                    <th class="text-right" style="width: 120px;">单位</th>
+                                                    <th class="text-right" style="width: 120px;">单价</th>
+                                                    <th class="text-right" style="width: 120px;">数量</th>
+                                                    <th class="text-right" style="width: 120px;">商品状态</th>
+                                                    <th class="text-right" style="width: 120px;">小计</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
+                                                    <td class="text-center">SMW2016254879</td>
+                                                    <td class="text-right">樘</td>
+                                                    <td class="text-right">￥2500</td>
+                                                    <td class="text-right">1</td>
+                                                    <td class="text-right">未发货</td>
+                                                    <td class="text-right">￥7500</td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
+                                                    <td class="text-center">SMW2016254879</td>
+                                                    <td class="text-right">樘</td>
+                                                    <td class="text-right">￥2500</td>
+                                                    <td class="text-right">1</td>
+                                                    <td class="text-right">未发货</td>
+                                                    <td class="text-right">￥7500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
+                                                    <td class="text-center">SMW2016254879</td>
+                                                    <td class="text-right">樘</td>
+                                                    <td class="text-right">￥2500</td>
+                                                    <td class="text-right">1</td>
+                                                    <td class="text-right">未发货</td>
+                                                    <td class="text-right">￥7500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="6" class="font-w600 text-right"></td>
+                                                    <td class="text-right" style="color:red;">总计</td>
+                                                    <td class="text-right" style="color:red;">$ 27.500,00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- END Dynamic Table Full -->
+
+                            <!-- 订单信息查看-已完成 -->
+                            <div class="oinfoready">
+                                <div>
+                                    <h4>订单详情</h4>
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>订单状态</th>
+                                                <td>未完成</td>
+                                                <th>订单号</th>
+                                                <td>SMW48575468959</td>
+                                                <th>下单时间</th>
+                                                <td>2016-08-10 09：45：10</td>
+                                            </tr>
+                                            <tr>
+                                                <th>收货人</th>
+                                                <td>张佳</td>
+                                                <th>收货电话</th>
+                                                <td>13659875412</td>
+                                                <th>收货地址</th>
+                                                <td>重庆市</td>
+                                            </tr>
+                                            <tr>
+                                                <th>进场时间</th>
+                                                <td>2016-08-17</td>
+                                                <th>所属区域</th>
+                                                <td>重庆</td>
+                                                <th>供应商</th>
+                                                <td>重庆飘瑞斯特贸易有限公司</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div>
+                                    <h4>商品信息</h4>
+                                    <div class="table-responsive push-50">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center" style="width: 50px;"></th>
+                                                    <th>商品名称</th>
+                                                    <th class="text-center" style="width: 100px;">商品编号</th>
+                                                    <th class="text-right" style="width: 120px;">单位</th>
+                                                    <th class="text-right" style="width: 120px;">单价</th>
+                                                    <th class="text-right" style="width: 120px;">数量</th>
+                                                    <th class="text-right" style="width: 120px;">商品状态</th>
+                                                    <th class="text-right" style="width: 120px;">小计</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
+                                                    <td class="text-center">SMW2016254879</td>
+                                                    <td class="text-right">樘</td>
+                                                    <td class="text-right">￥2500</td>
+                                                    <td class="text-right">1</td>
+                                                    <td class="text-right">未发货</td>
+                                                    <td class="text-right">￥7500</td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
+                                                    <td class="text-center">SMW2016254879</td>
+                                                    <td class="text-right">樘</td>
+                                                    <td class="text-right">￥2500</td>
+                                                    <td class="text-right">1</td>
+                                                    <td class="text-right">未发货</td>
+                                                    <td class="text-right">￥7500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
+                                                    <td class="text-center">SMW2016254879</td>
+                                                    <td class="text-right">樘</td>
+                                                    <td class="text-right">￥2500</td>
+                                                    <td class="text-right">1</td>
+                                                    <td class="text-right">未发货</td>
+                                                    <td class="text-right">￥7500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="6" class="font-w600 text-right"></td>
+                                                    <td class="text-right" style="color:red;">总计</td>
+                                                    <td class="text-right" style="color:red;">$ 27.500,00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>发货信息</h4>
+                                    <div>
+                                        <div class="col-sm-6 col-lg-12">
+                                            <div class="block block-themed">
+                                                <div class="block-header bg-muted">
+                                                    <ul class="block-options">
+                                                        <li>
+                                                            <button type="button"><i class="si si-settings"></i></button>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="block-title">
+                                                        <span>共计2件</span>
+                                                        <span>预计进场时间：2016-08-21</span>
+                                                        <span>物流公司：韵达快递</span>
+                                                        <span>运单编号：45896542698754623562</span>
+                                                    </h3>
+                                                </div>
+                                                <div class="block-content">
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <h5>智能家居系统</h4>
+                                                                <p><span>品牌：</span><span>定制</span></p>
+                                                                <p>×1</p>
+                                                                <p>下单时间</p>
+                                                            </li>
+                                                            <li>
+                                                                <h5>智能家居系统</h4>
+                                                                <p><span>品牌：</span><span>定制</span></p>
+                                                                <p>×1</p>
+                                                                <p>下单时间</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <div>
+                                                                    <p>已签收</p>
+                                                                    <p>
+                                                                        <span>签收人：张佳</span>
+                                                                        <span>项目经理</span>
+                                                                        <span>签收时间：2016-08-20 15:26:12</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                   <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <p>确认签收</p>
+                                                                    <p>
+                                                                        <span>签收人：张楠</span>
+                                                                        <span>监理</span>
+                                                                        <span>签收时间：2016-08-20 15:26:12</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                         <div class="tab-pane" id="btabs-alt-static-return">
-                            <!-- Dynamic Table Full -->
-                            <div class="block">
-                                <div class="block-content">
-                                    <table class="table table-bordered table-striped js-dataTable-full">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">退换货订单号</th>
-                                                <th>订单号</th>
-                                                <th class="hidden-xs">退货时间</th>
-                                                <th class="hidden-xs" style="width: 15%;">退货人</th>
-                                                <th class="text-center" style="width: 10%;">退换货订单状态</th>
-                                                <th>所属区域</th>
-                                                <th>供应商</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">SMWTHH85425155</td>
-                                                <td class="hidden-xs">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">未完成</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">SMWTHH85425155</td>
-                                                <td class="hidden-xs">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">未完成</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">SMWTHH85425155</td>
-                                                <td class="hidden-xs">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">未完成</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">SMWTHH85425155</td>
-                                                <td class="hidden-xs">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">未完成</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
+                                <div class="form-group">
+                                    <label  for="example-if-email">换货订单号</label>
+                                    <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" >
                                 </div>
-                            </div>
-                            <!-- END Dynamic Table Full -->
+                                <div class="form-group">
+                                    <label  for="example-if-email">订单号</label>
+                                    <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label  for="example-if-password">换货时间</label>
+                                    <input class="form-control" type="text" id="example-if-password" name="example-if-password" >-
+                                    <input class="form-control" type="text" id="example-if-password" name="example-if-password" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="example-select">订单状态</label>
+                                    <select class="form-control" id="example-select" name="example-select" size="1">
+                                        <option value="0">全部</option>
+                                        <option value="1">待换货</option>
+                                        <option value="2">已换货</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary" type="submit">查询</button>
+                                    <button class="btn btn-primary" type="submit">重置</button>
+                                </div>
+                            </form>
+                            <table class="table table-bordered table-striped js-dataTable-full">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">退换货订单号</th>
+                                        <th>订单号</th>
+                                        <th class="hidden-xs">退货时间</th>
+                                        <th class="hidden-xs" style="width: 15%;">退货人</th>
+                                        <th class="text-center" style="width: 10%;">退换货订单状态</th>
+                                        <th>所属区域</th>
+                                        <th>供应商</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">SMW48575468959</td>
+                                        <td class="font-w600">SMWTHH85425155</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td class="hidden-xs">张佳</td>
+                                        <td class="hidden-xs">未完成</td>
+                                        <td class="hidden-xs">重庆</td>
+                                        <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
+                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                    </tr>
+                                   <tr>
+                                        <td class="text-center">SMW48575468959</td>
+                                        <td class="font-w600">SMWTHH85425155</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td class="hidden-xs">张佳</td>
+                                        <td class="hidden-xs">未完成</td>
+                                        <td class="hidden-xs">重庆</td>
+                                        <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
+                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                    </tr>
+                                   <tr>
+                                        <td class="text-center">SMW48575468959</td>
+                                        <td class="font-w600">SMWTHH85425155</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td class="hidden-xs">张佳</td>
+                                        <td class="hidden-xs">未完成</td>
+                                        <td class="hidden-xs">重庆</td>
+                                        <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
+                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                    </tr>
+                                   <tr>
+                                        <td class="text-center">SMW48575468959</td>
+                                        <td class="font-w600">SMWTHH85425155</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td class="hidden-xs">张佳</td>
+                                        <td class="hidden-xs">未完成</td>
+                                        <td class="hidden-xs">重庆</td>
+                                        <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
+                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="tab-pane" id="btabs-animated-fade-return">
-                            <!-- Dynamic Table Full -->
-                            <div class="block">
-                                <div class="block-content">
-                                    <table class="table table-bordered table-striped js-dataTable-full">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">订单号</th>
-                                                <th>下单时间</th>
-                                                <th class="hidden-xs">收货人</th>
-                                                <th class="hidden-xs" style="width: 15%;">总金额（元）</th>
-                                                <th class="text-center" style="width: 10%;">订单状态</th>
-                                                <th>所属区域</th>
-                                                <th>供应商</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">待发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">已发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">待发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                           <tr>
-                                                <td class="text-center">SMW48575468959</td>
-                                                <td class="font-w600">2016-08-10 09：45：10</td>
-                                                <td class="hidden-xs">张佳</td>
-                                                <td class="hidden-xs">62000.00</td>
-                                                <td class="hidden-xs">已发货</td>
-                                                <td class="hidden-xs">重庆</td>
-                                                <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                                <td class="hidden-xs"><a href="">查看</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div class="tab-pane" id="btabs-alt-static-payment">
+                            <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
+                                <div class="form-group">
+                                    <label for="example-select">付款类型</label>
+                                    <select class="form-control" id="example-select" name="example-select" size="1">
+                                        <option value="0">全部</option>
+                                        <option value="1">待换货</option>
+                                        <option value="2">已换货</option>
+                                    </select>
+                                </div>                            
+                                <div class="form-group">
+                                    <label  for="example-if-password">交易类型</label>
+                                    <input class="form-control" type="text" id="example-if-password" name="example-if-password" >-
+                                    <input class="form-control" type="text" id="example-if-password" name="example-if-password" >
                                 </div>
-                            </div>
-                            <!-- END Dynamic Table Full -->
+                                
+                                <div class="form-group">
+                                    <button class="btn btn-primary" type="submit">查询</button>
+                                    <button class="btn btn-primary" type="submit">重置</button>
+                                </div>
+                            </form>
+                            <table class="table table-bordered table-striped js-dataTable-full">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">付款方</th>
+                                        <th>付款时间</th>
+                                        <th class="hidden-xs">付款类型</th>
+                                        <th class="hidden-xs" style="width: 15%;">付款方式</th>
+                                        <th>备注</th>
+                                        <th>付款金额</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">张佳</td>
+                                        <td class="font-w600">2016.06.19 12:58:02</td>
+                                        <td class="hidden-xs">物料费</td>
+                                        <td class="hidden-xs">线上支付</td>
+                                        <td class="hidden-xs">第一季度物料费用</td>
+                                        <td class="hidden-xs">1000.00</td>
+                                    </tr>
+                                   <tr>
+                                        <td class="text-center">张佳</td>
+                                        <td class="font-w600">2016.06.19 12:58:02</td>
+                                        <td class="hidden-xs">物料费</td>
+                                        <td class="hidden-xs">线上支付</td>
+                                        <td class="hidden-xs">第一季度物料费用</td>
+                                        <td class="hidden-xs">1000.00</td>
+                                    </tr>
+                                   <tr>
+                                        <td class="text-center">张佳</td>
+                                        <td class="font-w600">2016.06.19 12:58:02</td>
+                                        <td class="hidden-xs">物料费</td>
+                                        <td class="hidden-xs">线上支付</td>
+                                        <td class="hidden-xs">第一季度物料费用</td>
+                                        <td class="hidden-xs">1000.00</td>
+                                    </tr>
+                                   <tr>
+                                        <td class="text-center">张佳</td>
+                                        <td class="font-w600">2016.06.19 12:58:02</td>
+                                        <td class="hidden-xs">物料费</td>
+                                        <td class="hidden-xs">线上支付</td>
+                                        <td class="hidden-xs">第一季度物料费用</td>
+                                        <td class="hidden-xs">1000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

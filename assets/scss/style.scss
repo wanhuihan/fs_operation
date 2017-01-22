@@ -22,3 +22,29 @@
 		}
 	}	
 }
+
+// top header
+
+#header-navbar {
+	padding: 0;
+	.nav-header {
+		&.pull-right {
+			padding: 13px 30px;
+		}
+	}	
+	.navbar-nav {
+		li {
+			height: 60px;
+			line-height: 60px;			
+			a {
+				padding: 20px 20px;
+				color: #333;
+			}
+			&.active {
+				a {
+					background: #f5f5f5;
+				}
+			}
+		}
+	}	
+}

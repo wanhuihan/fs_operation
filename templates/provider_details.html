@@ -1,6 +1,6 @@
 <div class="provider-details">
     <div class="content bg-gray-lighter">
-        <div class="row items-push">
+        <div class="row">
             <div class="col-sm-5 hidden-xs">
                 <ol class="breadcrumb">
                     <li>供用商管理</li>
@@ -179,56 +179,56 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="btabs-alt-static-supply">
+                        <div class="tab-pane supplyinfo" id="btabs-alt-static-supply">
                             <table class="table table-bordered table-striped js-dataTable-full">
                                 <thead>
                                     <tr>
-                                        <th class="text-center"> 商品名称</th>
+                                        <th> 商品名称</th>
                                         <th>商品编号</th>
                                         <th class="hidden-xs">商品型号</th>
                                         <th class="hidden-xs" style="width: 15%;">商品分类</th>
-                                        <th class="text-center" style="width: 10%;">商品品牌</th>
+                                        <th style="width: 10%;">商品品牌</th>
                                         <th>商品规格</th>
                                         <th>商品单价</th>
-                                        <th>操作</th>
+                                        <th class="text-center">操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center">手持花洒带支架软管</td>
+                                        <td>手持花洒带支架软管</td>
                                         <td class="font-w600">SMW2016254879</td>
                                         <td class="hidden-xs">SDF15489-03</td>
                                         <td class="hidden-xs">主材-卫浴洁具</td>
                                         <td class="hidden-xs">诺顿</td>
                                         <td class="hidden-xs">15*42*16cm</td>
                                         <td class="hidden-xs">1465.88</td> 
-                                        <td class="hidden-xs"><a href="">查看</a><a href="">删除</a></td>
+                                        <td class="text-center"><a href="">查看</a><a href="">删除</a></td>
                                     </tr>
                                    <tr>
-                                        <td class="text-center">手持花洒带支架软管</td>
+                                        <td>手持花洒带支架软管</td>
                                         <td class="font-w600">SMW2016254879</td>
                                         <td class="hidden-xs">SDF15489-03</td>
                                         <td class="hidden-xs">主材-卫浴洁具</td>
                                         <td class="hidden-xs">诺顿</td>
                                         <td class="hidden-xs">15*42*16cm</td>
                                         <td class="hidden-xs">1465.88</td> 
-                                        <td class="hidden-xs"><a href="">查看</a><a href="">删除</a></td>
+                                        <td class="text-center"><a href="">查看</a><a href="">删除</a></td>
                                     </tr>
                                    <tr>
-                                        <td class="text-center">手持花洒带支架软管</td>
+                                        <td>手持花洒带支架软管</td>
                                         <td class="font-w600">SMW2016254879</td>
                                         <td class="hidden-xs">SDF15489-03</td>
                                         <td class="hidden-xs">主材-卫浴洁具</td>
                                         <td class="hidden-xs">诺顿</td>
                                         <td class="hidden-xs">15*42*16cm</td>
                                         <td class="hidden-xs">1465.88</td> 
-                                        <td class="hidden-xs"><a href="">查看</a><a href="">删除</a></td>
+                                        <td class="text-center"><a href="">查看</a><a href="">删除</a></td>
                                     </tr>
                                 </tbody>
                             </table>
 
                             <!-- 查看  供货信息-->
-                            <div class="lprovidergoodsinfo">
+                            <div class="supplyinfo-view">
                                 <table class="table table-bordered">
                                     <tbody>
                                         <tr>
@@ -266,16 +266,16 @@
                                         <tr>
                                             <th>商品图片</th>
                                             <td colspan="5">
-                                            <img src="" alt="">
-                                            <img src="" alt="">
-                                            <img src="" alt="">
+                                                <img src="http://placehold.it/60x60">
+                                                <img src="http://placehold.it/60x60">
+                                                <img src="http://placehold.it/60x60">
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="tab-pane" id="btabs-alt-static-orders">
+                        <div class="tab-pane orderinfo" id="btabs-alt-static-orders">
                             <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
                                 <div class="form-group">
                                     <label  for="example-if-email">订单号</label>
@@ -299,8 +299,8 @@
                                         <option value="2">已发货</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <button class="btn btn-primary" type="submit">查询</button>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-info" type="submit">查询</button>
                                     <button class="btn btn-primary" type="submit">重置</button>
                                 </div>
                             </form>
@@ -310,12 +310,12 @@
                                         <th class="text-center" style="width: 50px;">#</th>
                                         <th>退换货订单号</th>
                                         <th class="hidden-xs" >订单号</th>
-                                        <th class="text-center" >退货时间</th>
+                                        <th >退货时间</th>
                                         <th>退货人</th>
                                         <th>审批状态</th>
                                         <th>所属区域</th>
                                         <th>供应商</th>
-                                        <th>操作</th>
+                                        <th class="text-center">操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -323,45 +323,45 @@
                                         <td class="text-center">1</td>
                                         <td>SMW48575468959</td>
                                         <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td >2016-08-10 09：45：10</td>
                                         <td>张佳</td>
                                         <td>待审核</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
-                                        <td><a href="">查看</a></td>
+                                        <td class="text-center"><a href="">查看</a></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">2</td>
                                         <td>SMW48575468959</td>
                                         <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td >2016-08-10 09：45：10</td>
                                         <td>张佳</td>
                                         <td>审核通过</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
-                                        <td><a href="">查看</a></td>
+                                        <td class="text-center"><a href="">查看</a></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">3</td>
                                         <td>SMW48575468959</td>
                                         <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td >2016-08-10 09：45：10</td>
                                         <td>张佳</td>
                                         <td>审核拒绝</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
-                                        <td><a href="">查看</a></td>
+                                        <td class="text-center"><a href="">查看</a></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">4</td>
                                         <td>SMW48575468959</td>
                                         <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td class="text-center">2016-08-10 09：45：10</td>
+                                        <td >2016-08-10 09：45：10</td>
                                         <td>张佳</td>
                                         <td>待审核</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
-                                        <td><a href="">查看</a></td>
+                                        <td class="text-center"><a href="">查看</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -595,7 +595,7 @@
                                                                     </p>
                                                                 </div>
                                                                 <div>
-                                                                   <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
                                                                     <img src="http://placehold.it/60x60">
                                                                     <img src="http://placehold.it/60x60">
                                                                 </div>

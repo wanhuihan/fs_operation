@@ -280,12 +280,7 @@
                                 <div class="form-group">
                                     <label  for="example-if-email">订单号</label>
                                     <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" >
-                                </div>
-                                <div class="form-group">
-                                    <label  for="example-if-email">供应商</label>
-                                    <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" >
-                                </div>
-                                
+                                </div>                             
                                 <div class="form-group">
                                     <label  for="example-if-password">下单时间</label>
                                     <input class="form-control" type="text" id="example-if-password" name="example-if-password" >-
@@ -308,11 +303,11 @@
                                 <thead>
                                     <tr>
                                         <th class="text-center" style="width: 50px;">#</th>
-                                        <th>退换货订单号</th>
-                                        <th class="hidden-xs" >订单号</th>
-                                        <th >退货时间</th>
-                                        <th>退货人</th>
-                                        <th>审批状态</th>
+                                        <th>订单号</th>
+                                        <th class="hidden-xs" >下单时间</th>
+                                        <th >收货人</th>
+                                        <th>总金额（元）</th>
+                                        <th>订单状态</th>
                                         <th>所属区域</th>
                                         <th>供应商</th>
                                         <th class="text-center">操作</th>
@@ -322,43 +317,43 @@
                                     <tr>
                                         <td class="text-center">1</td>
                                         <td>SMW48575468959</td>
-                                        <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td >2016-08-10 09：45：10</td>
-                                        <td>张佳</td>
-                                        <td>待审核</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td >张佳</td>
+                                        <td>62000.00</td>
+                                        <td>未完成</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
                                         <td class="text-center"><a href="">查看</a></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">2</td>
-                                        <td>SMW48575468959</td>
-                                        <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td >2016-08-10 09：45：10</td>
-                                        <td>张佳</td>
-                                        <td>审核通过</td>
+                                         <td>SMW48575468959</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td >张佳</td>
+                                        <td>62000.00</td>
+                                        <td>未完成</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
                                         <td class="text-center"><a href="">查看</a></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">3</td>
-                                        <td>SMW48575468959</td>
-                                        <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td >2016-08-10 09：45：10</td>
-                                        <td>张佳</td>
-                                        <td>审核拒绝</td>
+                                         <td>SMW48575468959</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td >张佳</td>
+                                        <td>62000.00</td>
+                                        <td>未完成</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
                                         <td class="text-center"><a href="">查看</a></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">4</td>
-                                        <td>SMW48575468959</td>
-                                        <td class="hidden-xs">SMWTHH85425155</td>
-                                        <td >2016-08-10 09：45：10</td>
-                                        <td>张佳</td>
-                                        <td>待审核</td>
+                                         <td>SMW48575468959</td>
+                                        <td class="hidden-xs">2016-08-10 09：45：10</td>
+                                        <td >张佳</td>
+                                        <td>62000.00</td>
+                                        <td>未完成</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
                                         <td class="text-center"><a href="">查看</a></td>
@@ -367,8 +362,8 @@
                             </table>
 
                             <!-- 订单信息查看-未完成 -->
-                            <div class="oinfounc">
-                                <div>
+                            <div class="orderinfo-un-view" style="display: none;">
+                                <div class="block-content">
                                     <h4>订单详情</h4>
                                     <table class="table table-bordered">
                                         <tbody>
@@ -397,9 +392,9 @@
                                                 <td>重庆飘瑞斯特贸易有限公司</td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                    </table>                                   
                                 </div>
-                                <div>
+                                <div class="block-content">
                                     <h4>商品信息</h4>
                                     <div class="table-responsive push-50">
                                         <table class="table table-bordered table-hover">
@@ -454,15 +449,15 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                </div>
-                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
 
-                            <!-- 订单信息查看-已完成 -->
-                            <div class="oinfoready">
-                                <div>
-                                    <h4>订单详情</h4>
-                                    <table class="table table-bordered">
+                                        <!-- 订单信息查看-已完成 -->
+                                        <div class="orderinfo-complete-view block-content">
+                                        <div class="deliveryinfo">
+                                        <h4>订单详情</h4>
+                                        <table class="table table-bordered">
                                         <tbody>
                                             <tr>
                                                 <th>订单状态</th>
@@ -489,11 +484,11 @@
                                                 <td>重庆飘瑞斯特贸易有限公司</td>
                                             </tr>
                                         </tbody>
-                                    </table>
-                                </div>
-                                <div>
-                                    <h4>商品信息</h4>
-                                    <div class="table-responsive push-50">
+                                        </table>
+                                        </div>
+                                        <div class="deliveryinfo">
+                                        <h4>商品信息</h4>
+                                        <div class="table-responsive push-50">
                                         <table class="table table-bordered table-hover">
                                             <thead>
                                                 <tr>
@@ -546,17 +541,97 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4>发货信息</h4>
-                                    <div>
+                                        </div>
+                                        </div>
+                                        <div class="deliveryinfo">
+                                        <h4>发货信息</h4>
+
+                                        <table class="table table-bordered deliveryinfo-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left" colspan="5">
+                                                        共计2件 预计进场时间：2016-08-21 物流公司：韵达快递 运单编号：45896542698754623562
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td class="font-w600">Denise Watson</td>
+                                                    <td class="hidden-xs">client1@example.com</td>
+                                                    <td class="hidden-xs">
+                                                        <span class="label label-primary">Personal</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                                            <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td class="font-w600">Ethan Howard</td>
+                                                    <td class="hidden-xs">client2@example.com</td>
+                                                    <td class="hidden-xs">
+                                                        <span class="label label-danger">Disabled</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                                            <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+
+                                                        <ul class="row">
+                                                            <li class="col-md-6 deliveryinfo-sign">
+                                                                <div class=" col-md-4">
+                                                                    <p>已签收</p>
+                                                                    <p>
+                                                                        <span>签收人：张佳</span>
+                                                                        <span>项目经理</span>
+                                                                        <span>签收时间：2016-08-20 15:26:12</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="deliveryinfo-order-pic col-md-8">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                </div>
+                                                            </li>
+                                                            <li class="col-md-6">
+                                                                <div class="deliveryinfo-sign col-md-4">
+                                                                    <p>确认签收</p>
+                                                                    <p>
+                                                                        <span>签收人：张楠</span>
+                                                                        <span>监理</span>
+                                                                        <span>签收时间：2016-08-20 15:26:12</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="deliveryinfo-order-pic col-md-8">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                    <img src="http://placehold.it/60x60">
+                                                                </div>
+                                                            </li>                                                            
+                                                        </ul>
+
+                                                    </td>
+                                                </tr>                                                
+                                            </tbody>
+
+
+                                        </table>                                    
+                                   <!--  <div> -->
                                         <div class="col-sm-6 col-lg-12">
                                             <div class="block block-themed">
                                                 <div class="block-header bg-muted">
                                                     <ul class="block-options">
                                                         <li>
-                                                            <button type="button"><i class="si si-settings"></i></button>
+                                                            <button type="button" class="btn btn-primary">查看物流</button>
                                                         </li>
                                                     </ul>
                                                     <h3 class="block-title">
@@ -566,67 +641,63 @@
                                                         <span>运单编号：45896542698754623562</span>
                                                     </h3>
                                                 </div>
-                                                <div class="block-content">
-                                                    <div>
-                                                        <ul>
-                                                            <li>
+                                                <div class="block-content deliveryinfo-sign">
+                                                    <ul>
+                                                        <li class="row">
+                                                            <div class="deliveryinfo-sign-details col-md-9">
                                                                 <h5>智能家居系统</h4>
                                                                 <p><span>品牌：</span><span>定制</span></p>
-                                                                <p>×1</p>
-                                                                <p>下单时间</p>
-                                                            </li>
-                                                            <li>
+                                                                <p class="order-number">×1</p>
+                                                            </div>
+                                                            <div class="deliveryinfo-order-time col-md-3">下单时间</div>
+                                                        </li>
+                                                        <li class="row">
+                                                            <div class="deliveryinfo-sign-details col-md-9">
                                                                 <h5>智能家居系统</h4>
                                                                 <p><span>品牌：</span><span>定制</span></p>
-                                                                <p>×1</p>
-                                                                <p>下单时间</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div>
-                                                        <ul>
-                                                            <li>
-                                                                <div>
-                                                                    <p>已签收</p>
-                                                                    <p>
-                                                                        <span>签收人：张佳</span>
-                                                                        <span>项目经理</span>
-                                                                        <span>签收时间：2016-08-20 15:26:12</span>
-                                                                    </p>
-                                                                </div>
-                                                                <div>
-                                                                    <img src="http://placehold.it/60x60">
-                                                                    <img src="http://placehold.it/60x60">
-                                                                    <img src="http://placehold.it/60x60">
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div>
-                                                                    <p>确认签收</p>
-                                                                    <p>
-                                                                        <span>签收人：张楠</span>
-                                                                        <span>监理</span>
-                                                                        <span>签收时间：2016-08-20 15:26:12</span>
-                                                                    </p>
-                                                                </div>
-                                                                <div>
-                                                                    <img src="http://placehold.it/60x60">
-                                                                    <img src="http://placehold.it/60x60">
-                                                                    <img src="http://placehold.it/60x60">
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                                <p class="order-number">×1</p>
+                                                            </div>
+                                                            <div class="deliveryinfo-order-time col-md-3">下单时间</div>
+                                                        </li>
+                                                        <li class="row">
+                                                            <div class="deliveryinfo-sign-details col-md-4">
+                                                                <p>已签收</p>
+                                                                <p>
+                                                                    <span>签收人：张佳</span>
+                                                                    <span>项目经理</span>
+                                                                    <span>签收时间：2016-08-20 15:26:12</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="deliveryinfo-order-pic col-md-8">
+                                                                <img src="http://placehold.it/60x60">
+                                                                <img src="http://placehold.it/60x60">
+                                                                <img src="http://placehold.it/60x60">
+                                                            </div>
+                                                        </li>
+                                                        <li class="row">
+                                                            <div class="deliveryinfo-sign-details col-md-4">
+                                                                <p>确认签收</p>
+                                                                <p>
+                                                                    <span>签收人：张楠</span>
+                                                                    <span>监理</span>
+                                                                    <span>签收时间：2016-08-20 15:26:12</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="deliveryinfo-order-pic col-md-8">
+                                                                <img src="http://placehold.it/60x60">
+                                                                <img src="http://placehold.it/60x60">
+                                                                <img src="http://placehold.it/60x60">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </div>
-
-
                         </div>
-                        <div class="tab-pane" id="btabs-alt-static-return">
+                        <div class="tab-pane returninfo" id="btabs-alt-static-return">
                             <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
                                 <div class="form-group">
                                     <label  for="example-if-email">换货订单号</label>
@@ -662,7 +733,7 @@
                                         <th>订单号</th>
                                         <th class="hidden-xs">退货时间</th>
                                         <th class="hidden-xs" style="width: 15%;">退货人</th>
-                                        <th class="text-center" style="width: 10%;">退换货订单状态</th>
+                                        <th style="width: 10%;">退换货订单状态</th>
                                         <th>所属区域</th>
                                         <th>供应商</th>
                                         <th>操作</th>
@@ -712,7 +783,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="tab-pane" id="btabs-alt-static-payment">
+                        <div class="tab-pane paymentinfo" id="btabs-alt-static-payment">
                             <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
                                 <div class="form-group">
                                     <label for="example-select">付款类型</label>

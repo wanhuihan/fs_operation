@@ -40,40 +40,98 @@
   .provider .form-check > div:nth-child(5) > label {
     margin-right: 2%; }
 
-.provider-details .supplyinfo tbody td a {
+.provider-details .supplyinfo .table tbody td a {
   margin-left: 6%; }
 
-.provider-details .supplyinfo-view .table > tbody tr > th {
+.provider-details .supplyinfo .supplyinfo-view .table > tbody tr > th {
   text-align: center;
   vertical-align: middle;
   background: #e4e4e4; }
 
-.provider-details .supplyinfo-view .table > tbody tr > td {
+.provider-details .supplyinfo .supplyinfo-view .table > tbody tr > td {
   text-align: center; }
-
-.provider-details .supplyinfo-view .form-check {
-  padding: 6px 10px;
-  background: #e5e5e5; }
-  .provider-details .supplyinfo-view .form-check > div:nth-child(1) {
-    width: 18%; }
-    .provider-details .supplyinfo-view .form-check > div:nth-child(1) > label {
-      margin-right: 2%; }
-  .provider-details .supplyinfo-view .form-check > div:nth-child(2) {
-    width: 18%; }
-    .provider-details .supplyinfo-view .form-check > div:nth-child(2) > label {
-      margin-right: 2%; }
-  .provider-details .supplyinfo-view .form-check > div:nth-child(3) {
-    width: 32%; }
-    .provider-details .supplyinfo-view .form-check > div:nth-child(3) > label {
-      margin-right: 2%; }
-  .provider-details .supplyinfo-view .form-check > div:nth-child(4) {
-    width: 18%; }
-    .provider-details .supplyinfo-view .form-check > div:nth-child(4) > label {
-      margin-right: 2%; }
-  .provider-details .supplyinfo-view .form-check > div:nth-child(5) {
-    width: 12%; }
-    .provider-details .supplyinfo-view .form-check > div:nth-child(5) .btn {
-      margin-right: 4%; }
 
 .provider-details .orderinfo .table {
   margin-top: 20px; }
+
+.provider-details .orderinfo .form-check {
+  padding: 6px 10px;
+  background: #e5e5e5; }
+  .provider-details .orderinfo .form-check > div:nth-child(1) {
+    width: 18%; }
+    .provider-details .orderinfo .form-check > div:nth-child(1) > label {
+      margin-right: 2%; }
+  .provider-details .orderinfo .form-check > div:nth-child(2) {
+    width: 32%; }
+    .provider-details .orderinfo .form-check > div:nth-child(2) > label {
+      margin-right: 2%; }
+  .provider-details .orderinfo .form-check > div:nth-child(3) {
+    width: 32%; }
+    .provider-details .orderinfo .form-check > div:nth-child(3) > label {
+      margin-right: 2%; }
+  .provider-details .orderinfo .form-check > div:nth-child(4) {
+    width: 16%; }
+    .provider-details .orderinfo .form-check > div:nth-child(4) .btn {
+      margin-right: 4%; }
+
+.provider-details .orderinfo .orderinfo-complete-view .block-options > li > button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #5c90d2;
+  border: #3675c5;
+  opacity: 1; }
+
+.provider-details .orderinfo .orderinfo-complete-view .deliveryinfo .deliveryinfo-sign ul > li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  vertical-align: middle; }
+
+.provider-details .orderinfo .orderinfo-complete-view .deliveryinfo .deliveryinfo-sign .deliveryinfo-sign-details {
+  position: relative; }
+  .provider-details .orderinfo .orderinfo-complete-view .deliveryinfo .deliveryinfo-sign .deliveryinfo-sign-details .order-number {
+    position: absolute;
+    top: 26%;
+    right: 4%; }
+
+.provider-details .orderinfo .orderinfo-complete-view .deliveryinfo .deliveryinfo-sign .deliveryinfo-order-time {
+  margin-top: 20px; }
+
+.provider-details .returninfo .form-check {
+  padding: 6px 10px;
+  background: #e5e5e5; }
+  .provider-details .returninfo .form-check > div:nth-child(1) {
+    width: 18%; }
+    .provider-details .returninfo .form-check > div:nth-child(1) > label {
+      margin-right: 2%; }
+  .provider-details .returninfo .form-check > div:nth-child(2) {
+    width: 18%; }
+    .provider-details .returninfo .form-check > div:nth-child(2) > label {
+      margin-right: 2%; }
+  .provider-details .returninfo .form-check > div:nth-child(3) {
+    width: 32%; }
+    .provider-details .returninfo .form-check > div:nth-child(3) > label {
+      margin-right: 2%; }
+  .provider-details .returninfo .form-check > div:nth-child(4) {
+    width: 18%; }
+    .provider-details .returninfo .form-check > div:nth-child(4) > label {
+      margin-right: 2%; }
+  .provider-details .returninfo .form-check > div:nth-child(5) {
+    width: 12%; }
+    .provider-details .returninfo .form-check > div:nth-child(5) .btn {
+      margin-right: 4%; }
+
+.provider-details .paymentinfo .form-check {
+  padding: 6px 10px;
+  background: #e5e5e5; }
+  .provider-details .paymentinfo .form-check > div:nth-child(1) {
+    width: 18%; }
+    .provider-details .paymentinfo .form-check > div:nth-child(1) > label {
+      margin-right: 2%; }
+  .provider-details .paymentinfo .form-check > div:nth-child(2) {
+    width: 56%; }
+    .provider-details .paymentinfo .form-check > div:nth-child(2) > label {
+      margin-right: 2%; }
+  .provider-details .paymentinfo .form-check > div:nth-child(3) {
+    width: 20%; }
+    .provider-details .paymentinfo .form-check > div:nth-child(3) .btn {
+      margin-right: 4%; }

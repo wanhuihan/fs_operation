@@ -16,7 +16,7 @@
 	border-bottom: 2px solid #fff;
 	background-color: #fefefe;
 }
-// 供应商管理
+// 供应商管理页
 .provider {
 	.form-check {
 
@@ -54,37 +54,119 @@
 	
 }
 
-// 供应商详情
+// 供应商详情页
 .provider-details {
 
-	// 供应商信息
+	// 供货信息
 	.supplyinfo {
-		tbody {
-			td {
-				a {
-					margin-left: 6%;
+		.table{
+			tbody {
+				td {
+					a {
+						margin-left: 6%;
+					}
 				}
 			}
 		}
-		
+		.supplyinfo-view {
+			.table {
+				> tbody {
+					tr {
+						> th {
+							text-align: center;
+							vertical-align: middle;
+							background: #e4e4e4;
+						}
+						> td {
+							text-align: center;	
+						}
+					}	
+				}
+			}
+		}
 	}
-	
-	.supplyinfo-view {
+		
+
+	// 订单信息
+	.orderinfo {
+
 		.table {
-			> tbody {
-				tr {
-					> th {
-						text-align: center;
-						vertical-align: middle;
-						background: #e4e4e4;
-					}
-					> td {
-						text-align: center;	
-					}
-				}	
+			margin-top: 20px;
+		}
+
+		.form-check {
+
+			padding: 6px 10px;
+			background: #e5e5e5;
+
+			& > div:nth-child(1) {
+				width: 18%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(2) {
+				width: 32%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(3) {
+				width: 32%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(4) {
+				width: 16%;
+				.btn {
+					margin-right: 4%;
+				}
 			}
 		}
 
+
+		// 订单信息-未完成查看
+		.orderinfo-un-view {
+
+		}
+		.orderinfo-complete-view {
+			.block-options {
+				> li {
+					> button {
+						padding: 6px 12px;
+						border-radius: 4px;
+						background: #5c90d2;
+						border: #3675c5;
+						opacity: 1;
+					}
+				}	
+			}
+			.deliveryinfo {
+				.deliveryinfo-sign {
+					ul > li {
+						margin-bottom: 10px;
+						list-style-type: none;
+						vertical-align: middle;
+					}
+					.deliveryinfo-sign-details {
+						position: relative;
+						.order-number {
+							position: absolute;
+							top: 26%;
+							right: 4%;
+						}
+					}
+					.deliveryinfo-order-time {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	// 退换货信息
+	.returninfo {
 		.form-check {
 
 			padding: 6px 10px;
@@ -123,15 +205,35 @@
 		}
 	}
 
-	
 
-	// 订单信息
-	.orderinfo {
-		.table {
-			margin-top: 20px;
+	// 付款信息	
+	.paymentinfo {
+		.form-check {
+
+			padding: 6px 10px;
+			background: #e5e5e5;
+
+			& > div:nth-child(1) {
+				width: 18%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(2) {
+				width: 56%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(3) {
+				width: 20%;
+				.btn {
+					margin-right: 4%;
+				}
+			}
 		}
-	}	
-}
+	}
+}	
 
 
-	
+

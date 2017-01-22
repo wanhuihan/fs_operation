@@ -9,3 +9,9 @@
 
 #page-container.no-login #main-container .login {
   float: none; }
+
+ #page-container #header-navbar {
+ 	background: url(../img/topBg.png) no-repeat #fff right center;
+ 	background-size: 50%;
+ 	background-position: 
+ }

@@ -54,5 +54,103 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             },
         },
     })
+    
+     $stateProvider.state('provider', {
+
+        url: '/provider',
+
+        resolve: {
+
+        },
+
+        views: {
+
+            'sideBar@': {
+
+                templateUrl: '../../templates/sideBar.html',
+                 controller: "header"
+            },
+
+            'header@': {
+
+                templateUrl: '../../templates/header.html',
+
+                controller: "header"
+            },
+
+            'main@': {
+                templateUrl: '../../templates/provider.html',
+                // controller: 'navigation'
+                // controller: 'provider'
+            },
+        },
+    })
+
+     $stateProvider.state('provider.details', {
+
+        url: '/details',
+
+        resolve: {
+
+        },
+
+        views: {
+
+            // 'sideBar': {
+
+            //     templateUrl: '../../templates/sideBar.html',
+
+
+            // },
+
+            // 'header@': {
+
+            //     templateUrl: '../../templates/header.html',
+
+            //     controller: "header"
+            // },
+
+            'main@': {
+                templateUrl: '../../templates/provider_details.html',
+                // controller: 'navigation'
+                controller: function() {
+                    g.domReady();                  
+                }
+            },
+        },
+    })
+
+    $stateProvider.state('appeal', {
+
+        url: '/appeal',
+
+        resolve: {
+
+        },
+
+        views: {
+
+            'sideBar@': {
+
+                templateUrl: '../../templates/sideBar.html',
+                 controller: "header"
+            },
+
+            'header@': {
+
+                templateUrl: '../../templates/header.html',
+
+                controller: "header"
+            },
+
+            'main@': {
+                templateUrl: '../../templates/appeal.html',
+                // controller: 'navigation'
+                controller: function() {
+                    g.domReady();                  
+                }
+            },
+        },
+    })
 
 })

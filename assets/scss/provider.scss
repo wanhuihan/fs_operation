@@ -1,0 +1,40 @@
+.provider {
+	.form-check {
+
+		& > div:nth-child(1) {
+			width: 20%;
+			> label {
+				margin-right: 4%; 
+			}
+		}
+		& > div:nth-child(2) {
+			width: 20%;
+			> label {
+				margin-right: 4%; 
+			}
+		}
+		& > div:nth-child(3) {
+			width: 20%;
+			> label {
+				margin-right: 4%; 
+			}
+		}
+		& > div:nth-child(4) {
+			width: 16%;
+			> label {
+				margin-right: 4%; 
+			}
+		}
+		& > div:nth-child(5) {
+			width: 16%;
+			text-align: right;
+			> label {
+				margin-right: 4%; 
+			}
+		}
+	}
+}	
+	
+.breadcrumb {
+	font-size: 16px !important;
+}

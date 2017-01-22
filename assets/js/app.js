@@ -141,6 +141,7 @@ var App = function() {
 
                 // If sidebar scrolling does not exist init it..
                 if ($lSidebarScroll.length && (!$lSidebarScroll.parent('.slimScrollDiv').length)) {
+                    
                     $lSidebarScroll.slimScroll({
                         height: $lSidebar.outerHeight(),
                         color: '#fff',
@@ -302,8 +303,9 @@ var App = function() {
     // Main navigation functionality
     var uiNav = function() {
         // When a submenu link is clicked
-        // jQuery('[data-toggle="nav-submenu"]').on('click', function(e){
+
         jQuery(document).on('click', '[data-toggle="nav-submenu"]', function(e){    
+
             // Stop default behaviour
             e.stopPropagation();
 
@@ -330,6 +332,7 @@ var App = function() {
                 $link.blur();
             }
         });
+
     };
 
     // Blocks options functionality
@@ -1165,8 +1168,17 @@ var g = {
             // window.location.href = "/login";
         }
 
+    },
 
+    domReady: function() {
+        jQuery(function(){ 
+
+            App.init();
+
+        })
     }
+
+
 }
 
 var fs = angular.module("fs", ["ui.router", 'angular-loading-bar','ngDialog', 'ngCookies']);

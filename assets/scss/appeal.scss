@@ -1,0 +1,27 @@
+.appeal {
+	.form-check {
+
+		& > div:nth-child(1) {
+			width: 18%;
+			> label {
+				margin-right: 2%; 
+			}
+		}
+		& > div:nth-child(2) {
+			width: 16%;
+			> label {
+				margin-right: 2%; 
+			}
+		}
+		& > div:nth-child(3) {
+			width: 32%;
+			> label {
+				margin-right: 2%; 
+			}
+		}
+		& > div:nth-child(4) {
+			width: 32%;
+			text-align: right;
+		}
+	}
+}

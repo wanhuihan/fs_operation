@@ -134,35 +134,21 @@
 		.orderinfo-un-view {
 
 		}
+		// 订单信息-已完成查看
 		.orderinfo-complete-view {
-			.block-options {
-				> li {
-					> button {
-						padding: 6px 12px;
-						border-radius: 4px;
-						background: #5c90d2;
-						border: #3675c5;
-						opacity: 1;
-					}
-				}	
-			}
-			.deliveryinfo {
-				.deliveryinfo-sign {
-					ul > li {
-						margin-bottom: 10px;
-						list-style-type: none;
-						vertical-align: middle;
-					}
-					.deliveryinfo-sign-details {
-						position: relative;
-						.order-number {
-							position: absolute;
-							top: 26%;
-							right: 4%;
+			.orderinfo-complete-delivery {
+				position: relative;
+				thead {
+					tr {
+						th {
+							.th-title {
+								button {
+									display: block;
+									position: absolute;
+									right: 0;
+								}
+							}
 						}
-					}
-					.deliveryinfo-order-time {
-						margin-top: 20px;
 					}
 				}
 			}

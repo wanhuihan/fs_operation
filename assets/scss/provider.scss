@@ -16,6 +16,9 @@
 	border-bottom: 2px solid #fff;
 	background-color: #fefefe;
 }
+a:hover {
+	cursor: pointer;
+}
 // 供应商管理页
 .provider {
 	.form-check {
@@ -136,27 +139,17 @@
 		}
 		// 订单信息-已完成查看
 		.orderinfo-complete-view {
-			.orderinfo-complete-delivery {
-				position: relative;
-				thead {
-					tr {
-						th {
-							.th-title {
-								button {
-									display: block;
-									position: absolute;
-									right: 0;
-								}
-							}
-						}
-					}
-				}
-			}
+
 		}
 	}
 
 	// 退换货信息
 	.returninfo {
+
+		.table {
+			margin-top: 20px;
+		}
+
 		.form-check {
 
 			padding: 6px 10px;

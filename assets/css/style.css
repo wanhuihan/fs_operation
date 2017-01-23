@@ -11,7 +11,8 @@
   float: none; }
 
 #header-navbar {
-  padding: 0; }
+  padding: 0;
+  border-bottom: 1px solid #ccc; }
   #header-navbar .nav-header.pull-right {
     padding: 13px 30px; }
   #header-navbar .navbar-nav li {

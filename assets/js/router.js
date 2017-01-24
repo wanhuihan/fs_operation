@@ -25,7 +25,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
     })
 
     // dashboard page
-    $stateProvider.state('/dashboard', {
+    $stateProvider.state('dashboard', {
 
         url: '/dashboard',
 
@@ -55,7 +55,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
         },
     })
     
-     $stateProvider.state('provider', {
+     $stateProvider.state('dashboard.provider', {
 
         url: '/provider',
 
@@ -86,7 +86,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
         },
     })
 
-     $stateProvider.state('provider.details', {
+     $stateProvider.state('dashboard.provider.details', {
 
         url: '/details',
 
@@ -120,7 +120,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
         },
     })
 
-    $stateProvider.state('appeal', {
+    $stateProvider.state('dashboard.appeal', {
 
         url: '/appeal',
 

@@ -1,51 +1,9 @@
-.breadcrumb {
-  font-size: 16px !important; }
-
-.content {
-  padding: 10px 30px;
-  margin: 15px 0; }
-
 .content-check {
-  background: #e5e5e5;
   padding: 10px 10px;
   margin: 0 30px; }
 
-.bg-gray-lighter {
-  border-top: 1px solid #fff;
-  border-bottom: 2px solid #fff;
-  background-color: #fefefe; }
-
 a:hover {
   cursor: pointer; }
-
-.provider .form-check > div:nth-child(1) {
-  width: 18%; }
-  .provider .form-check > div:nth-child(1) > label {
-    margin-right: 2%; }
-
-.provider .form-check > div:nth-child(2) {
-  width: 18%; }
-  .provider .form-check > div:nth-child(2) > label {
-    margin-right: 2%; }
-
-.provider .form-check > div:nth-child(3) {
-  width: 18%; }
-  .provider .form-check > div:nth-child(3) > label {
-    margin-right: 2%; }
-
-.provider .form-check > div:nth-child(4) {
-  width: 18%; }
-  .provider .form-check > div:nth-child(4) > label {
-    margin-right: 2%; }
-
-.provider .form-check > div:nth-child(5) {
-  width: 16%; }
-  .provider .form-check > div:nth-child(5) > label {
-    margin-right: 2%; }
-
-.provider .form-check > div:nth-child(6) {
-  width: 10%;
-  text-align: right; }
 
 .provider-details .supplyinfo .table tbody td a {
   margin-left: 6%; }

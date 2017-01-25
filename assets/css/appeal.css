@@ -1,0 +1,18 @@
+.appeal .form-check > div:nth-child(1) {
+  width: 18%; }
+  .appeal .form-check > div:nth-child(1) > label {
+    margin-right: 2%; }
+
+.appeal .form-check > div:nth-child(2) {
+  width: 16%; }
+  .appeal .form-check > div:nth-child(2) > label {
+    margin-right: 2%; }
+
+.appeal .form-check > div:nth-child(3) {
+  width: 32%; }
+  .appeal .form-check > div:nth-child(3) > label {
+    margin-right: 2%; }
+
+.appeal .form-check > div:nth-child(4) {
+  width: 32%;
+  text-align: right; }

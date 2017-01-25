@@ -55,7 +55,8 @@ fs.config(function($stateProvider, $urlRouterProvider) {
         },
     })
     
-     $stateProvider.state('dashboard.provider', {
+    // provider page
+    $stateProvider.state('dashboard.provider', {
 
         url: '/provider',
 
@@ -86,7 +87,9 @@ fs.config(function($stateProvider, $urlRouterProvider) {
         },
     })
 
-     $stateProvider.state('dashboard.provider.details', {
+
+    // provider details page
+    $stateProvider.state('dashboard.provider.details', {
 
         url: '/details',
 
@@ -120,6 +123,8 @@ fs.config(function($stateProvider, $urlRouterProvider) {
         },
     })
 
+
+    // appeal page
     $stateProvider.state('dashboard.appeal', {
 
         url: '/appeal',
@@ -133,7 +138,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             'sideBar@': {
 
                 templateUrl: '../../templates/sideBar.html',
-                 controller: "header"
+                controller: "header"
             },
 
             'header@': {
@@ -146,6 +151,100 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             'main@': {
                 templateUrl: '../../templates/appeal.html',
                 // controller: 'navigation'
+                controller: function() {
+                    g.domReady();                  
+                }
+            },
+        },
+    })
+
+    // purchase page
+    $stateProvider.state('dashboard.purchase',{
+
+        url: '/purchase',
+
+        resolve: {},
+
+        views: {
+
+            'sideBar@': {
+
+                templateUrl: '../../templates/sideBar.html',
+                controller: 'header'
+            },
+
+            'header@': {
+
+                templateUrl: '../../templates/header.html',
+
+                controller: "header"
+            },
+
+            'main@': {
+                templateUrl: '../../templates/purchase.html',
+                controller: function() {
+                    g.domReady();                  
+                }
+            },
+        },
+    })
+
+
+
+     $stateProvider.state('dashboard.purchase.details',{
+
+        url: '/details',
+
+        resolve: {},
+
+        views: {
+
+            'sideBar@': {
+
+                templateUrl: '../../templates/sideBar.html',
+                controller: 'header'
+            },
+
+            'header@': {
+
+                templateUrl: '../../templates/header.html',
+
+                controller: "header"
+            },
+
+            'main@': {
+                templateUrl: '../../templates/purchase_details.html',
+                controller: function() {
+                    g.domReady();                  
+                }
+            },
+        },
+    })
+
+    // returngoods page
+    $stateProvider.state('dashboard.returngoods',{
+
+        url: '/returngoods',
+
+        resolve: {},
+
+        views: {
+
+            'sideBar@': {
+
+                templateUrl: '../../templates/sideBar.html',
+                controller: 'header'
+            },
+
+            'header@': {
+
+                templateUrl: '../../templates/header.html',
+
+                controller: "header"
+            },
+
+            'main@': {
+                templateUrl: '../../templates/returngoods.html',
                 controller: function() {
                     g.domReady();                  
                 }

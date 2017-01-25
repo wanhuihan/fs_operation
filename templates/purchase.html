@@ -1,0 +1,215 @@
+<div class="purchase">
+    <!-- Page Header -->
+    <div class="content">
+        <div class="">
+            <div class="hidden-xs">
+                <ol class="breadcrumb">
+                    <li>供用商管理</li>
+                    <li><a class="link-effect" href="">供应商详情</a></li>
+                </ol>
+            </div>   
+        </div>
+    </div>
+    <!-- END Page Header -->
+
+    <!-- Page Information Service -->
+    <div class="content content-check search-bar bg-gray-lighter">
+        <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
+            <div class="form-group">
+                <label  for="example-if-email">供应商名称</label>
+                <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" placeholder="Enter providerName..">
+            </div>
+            <div class="form-group">
+                <label  for="example-if-password">联系人姓名</label>
+                <input class="form-control" type="text" id="example-if-password" name="example-if-password" placeholder="Enter Name..">
+            </div>
+            <div class="form-group">
+                <label  for="example-if-password">联系人电话</label>
+                <input class="form-control" type="text" id="example-if-password" name="example-if-password" placeholder="Enter telphone..">
+            </div>
+            <div class="form-group">
+                <label for="example-select">供货类型</label>
+                    <select class="form-control" id="example-select" name="example-select" size="1">
+                        <option value="0">全部</option>
+                        <option value="1">主材</option>
+                        <option value="2">辅材</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">查询</button>
+                <button class="btn btn-default" type="submit">重置</button>
+            </div>
+            <div class="form-group pull-right">
+                <button class="btn btn-info">添加供应商</button>
+            </div>
+        </form>
+    </div>
+    <!-- END Page Information Service -->
+    
+    <div class="content pagination">
+        <form class="form-inline">
+            <div>
+                <span>
+                    当前第1页
+                </span>
+                <select class="form-control" id="example-select" name="example-select" size="1">
+                    <option value="0">第1页</option>
+                    <option value="1">第2页</option>
+                    <option value="2">第3页</option>
+                    <option value="3">第4页</option>
+                </select>
+                
+                <button class="btn  btn-square btn-default" type="button">首页</button>
+                <button class="btn  btn-square btn-default" type="button">上一页</button>
+                <button class="btn  btn-square btn-default" type="button">下一页</button>
+                <button class="btn  btn-square btn-default" type="button">尾页</button>
+
+                <select class="form-control" id="example-select" name="example-select" size="1">
+                    <option value="0">每页20条</option>
+                    <option value="1">每页40条</option>
+                    <option value="2">每页60条</option>
+                    <option value="3">每页80条</option>
+                </select>
+
+            </div>            
+        </form>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <!-- Dynamic Table Full -->
+        <div class="block">
+            <!-- <div class="block-header">
+                <h3 class="block-title">Dynamic Table <small>Full</small></h3>
+            </div> -->
+            <div class="">
+                <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/base_tables_datatables.js -->
+                <table class="table table-bordered table-striped js-dataTable-full">
+                    <thead>
+                        <tr>
+                            <th class="text-center">供应商名称</th>
+                            <th>登录名</th>
+                            <th class="hidden-xs">联系人</th>
+                            <th class="hidden-xs" style="width: 15%;">联系电话</th>
+                            <th class="text-center" style="width: 10%;">供货类型</th>
+                            <th>所属区域</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a ui-sref="dashboard.provider.details">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a ui-sref="dashboard.provider.details">查看</a></td>
+                        </tr>
+                       <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                       <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                       <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                       <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                       <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                       <tr>
+                            <td class="text-center">重庆飘瑞斯特贸易有限公司</td>
+                            <td class="font-w600">CQ_PRST</td>
+                            <td class="hidden-xs">程楠</td>
+                            <td class="hidden-xs">13548967845</td>
+                            <td class="hidden-xs">主材</td>
+                            <td class="hidden-xs">重庆</td>
+                            <td class="hidden-xs"><a href="">查看</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- END Dynamic Table Full -->
+    </div>
+    <!-- END Page Content -->
+</div>

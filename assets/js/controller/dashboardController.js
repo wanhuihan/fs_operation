@@ -1,6 +1,7 @@
 
 fs.controller("dashboard", function($scope, $location, $http, fs) {
 
+	 g.domReady();
 	// console.log(fs.cookieCheck());
 	if (fs.cookieCheck()) {
 
@@ -13,8 +14,9 @@ fs.controller("dashboard", function($scope, $location, $http, fs) {
 
 })
 
-fs.controller("provider", function($scope, $location, $http, fs) {
+fs.controller("provider", function($scope, $location, $http, fs,ngDialog) {
 
+	g.domReady();
 	// console.log(fs.cookieCheck());
 	if (fs.cookieCheck()) {
 
@@ -25,5 +27,18 @@ fs.controller("provider", function($scope, $location, $http, fs) {
 	}
 
 	// console.log(123)
+
+	$scope.clickToOpen = function() {
+
+        ngDialog.open({ 
+
+        	template: '../../../templates/orders_details.html' ,
+        	className :'ngdialog-theme-default orderinfo-un-view',
+        	scope: $scope,
+        	
+   		});
+
+        
+    };
 
 })

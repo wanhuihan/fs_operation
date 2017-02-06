@@ -1,0 +1,157 @@
+// 供应商详情页
+.provider-details {
+
+	// 供货信息
+	.supplyinfo {
+		.table{
+			tbody {
+				td {
+					a {
+						margin-left: 6%;
+					}
+				}
+			}
+		}
+		.supplyinfo-view {
+			.table {
+				> tbody {
+					tr {
+						> th {
+							text-align: center;
+							vertical-align: middle;
+							background: #e4e4e4;
+						}
+						> td {
+							text-align: center;
+							vertical-align: middle;	
+						}
+					}	
+				}
+			}
+		}
+	}
+		
+
+	// 订单信息
+	.orderinfo {
+
+		.table {
+			margin-top: 20px;
+		}
+
+		.form-check {
+
+			padding: 6px 10px;
+			// background: #e5e5e5;
+
+			& > div:nth-child(1) {
+				width: 18%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(2) {
+				width: 32%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(3) {
+				width: 32%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(4) {
+				width: 16%;
+				.btn {
+					margin-right: 4%;
+				}
+			}
+		}
+
+
+		// 订单信息-未完成查看
+		.orderinfo-un-view {
+
+		}
+		// 订单信息-已完成查看
+		.orderinfo-complete-view {
+
+		}
+	}
+
+	// 退换货信息
+	.returninfo {
+
+		.table {
+			margin-top: 20px;
+		}
+
+		.form-check {
+
+			padding: 6px 10px;
+			background: #e5e5e5;
+
+			& > div:nth-child(1) {
+				width: 18%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(2) {
+				width: 18%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(3) {
+				width: 32%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(4) {
+				width: 18%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(5) {
+				width: 12%;
+				.btn {
+					margin-right: 4%;
+				}
+			}
+		}
+	}
+
+
+	// 付款信息	
+	.paymentinfo {
+		.form-check {
+
+			padding: 6px 10px;
+			background: #e5e5e5;
+
+			& > div:nth-child(1) {
+				width: 18%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(2) {
+				width: 56%;
+				> label {
+					margin-right: 2%; 
+				}
+			}
+			& > div:nth-child(3) {
+				width: 20%;
+				.btn {
+					margin-right: 4%;
+				}
+			}
+		}
+	}
+}	

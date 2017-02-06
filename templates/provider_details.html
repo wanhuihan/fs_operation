@@ -276,7 +276,8 @@
                             </div>
                         </div>
                         <div class="tab-pane orderinfo" id="btabs-alt-static-orders">
-                            <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
+                            <div class="search-bar bg-gray-lighter">
+                               <form class="form-inline form-check" action="base_forms_elements.html" method="post" onsubmit="return false;">
                                 <div class="form-group">
                                     <label  for="example-if-email">订单号</label>
                                     <input class="form-control" type="text" ="" id="example-if-email" name="example-if-email" >
@@ -308,7 +309,9 @@
                                     <button class="btn btn-info" type="submit">查询</button>
                                     <button class="btn btn-primary" type="submit">重置</button>
                                 </div>
-                            </form>
+                            </form> 
+                            </div>
+                            
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
@@ -333,7 +336,7 @@
                                         <td>未完成</td>
                                         <td>重庆</td>
                                         <td>重庆飘瑞斯特贸易有限公司</td>
-                                        <td class="text-center"><a href="">查看</a></td>
+                                        <td class="text-center"><a  ng-click="clickToOpen()">查看</a></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">2</td>
@@ -370,98 +373,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-
-                            <!-- 订单信息查看-未完成 -->
-                            <div class="orderinfo-un-view" style="display: none;">
-                                <div class="orderinfo-un-order">
-                                    <h4>订单详情</h4>
-                                    <table class="table table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <th>订单状态</th>
-                                                <td>未完成</td>
-                                                <th>订单号</th>
-                                                <td>SMW48575468959</td>
-                                                <th>下单时间</th>
-                                                <td>2016-08-10 09：45：10</td>
-                                            </tr>
-                                            <tr>
-                                                <th>收货人</th>
-                                                <td>张佳</td>
-                                                <th>收货电话</th>
-                                                <td>13659875412</td>
-                                                <th>收货地址</th>
-                                                <td>重庆市</td>
-                                            </tr>
-                                            <tr>
-                                                <th>进场时间</th>
-                                                <td>2016-08-17</td>
-                                                <th>所属区域</th>
-                                                <td>重庆</td>
-                                                <th>供应商</th>
-                                                <td>重庆飘瑞斯特贸易有限公司</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>                                   
-                                </div>
-                                <div class="orderinfo-un-goods">
-                                    <h4>商品信息</h4>
-                                    <div class="table-responsive push-50">
-                                        <table class="table table-bordered table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center" style="width: 50px;"></th>
-                                                    <th class="text-center">商品名称</th>
-                                                    <th class="text-center" style="width: 100px;">商品编号</th>
-                                                    <th class="text-center" style="width: 120px;">单位</th>
-                                                    <th class="text-right" style="width: 120px;">单价</th>
-                                                    <th class="text-right" style="width: 120px;">数量</th>
-                                                    <th class="text-right" style="width: 120px;">商品状态</th>
-                                                    <th class="text-right" style="width: 120px;">小计</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center">1</td>
-                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
-                                                    <td class="text-center">SMW2016254879</td>
-                                                    <td class="text-center">樘</td>
-                                                    <td class="text-right">￥2500</td>
-                                                    <td class="text-right">1</td>
-                                                    <td class="text-right">未发货</td>
-                                                    <td class="text-right">￥7500</td>
-                                                   
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">1</td>
-                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
-                                                    <td class="text-center">SMW2016254879</td>
-                                                    <td class="text-center">樘</td>
-                                                    <td class="text-right">￥2500</td>
-                                                    <td class="text-right">1</td>
-                                                    <td class="text-right">未发货</td>
-                                                    <td class="text-right">￥7500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">1</td>
-                                                    <th class="text-center" style="width: 100px;"> 主入户门</th>
-                                                    <td class="text-center">SMW2016254879</td>
-                                                    <td class="text-center">樘</td>
-                                                    <td class="text-right">￥2500</td>
-                                                    <td class="text-right">1</td>
-                                                    <td class="text-right">未发货</td>
-                                                    <td class="text-right">￥7500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="6" class="font-w600 text-right"></td>
-                                                    <td class="text-right" style="color:red;">总计</td>
-                                                    <td class="text-right" style="color:red;">$ 27.500,00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- 订单信息查看-已完成 -->
                             <div class="orderinfo-complete-view">
@@ -720,21 +631,23 @@
                                     <button class="btn btn-primary" type="submit">重置</button>
                                 </div>
                             </form>
-                            <table class="table table-bordered table-striped js-dataTable-full">
+                            <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">退换货订单号</th>
+                                        <th class="text-center" style="width: 50px;">#</th>
+                                        <th class="text-center">换货订单号</th>
                                         <th>订单号</th>
                                         <th class="hidden-xs">退货时间</th>
                                         <th class="hidden-xs" style="width: 15%;">退货人</th>
-                                        <th style="width: 10%;">退换货订单状态</th>
+                                        <th style="width: 10%;">换货订单状态</th>
                                         <th>所属区域</th>
                                         <th>供应商</th>
-                                        <th>操作</th>
+                                        <th class="text-center">操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td class="text-center">1</td>
                                         <td class="text-center">SMW48575468959</td>
                                         <td class="font-w600">SMWTHH85425155</td>
                                         <td class="hidden-xs">2016-08-10 09：45：10</td>
@@ -742,9 +655,10 @@
                                         <td class="hidden-xs">未完成</td>
                                         <td class="hidden-xs">重庆</td>
                                         <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                        <td class="hidden-xs text-center"><a href="">查看</a></td>
                                     </tr>
-                                   <tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
                                         <td class="text-center">SMW48575468959</td>
                                         <td class="font-w600">SMWTHH85425155</td>
                                         <td class="hidden-xs">2016-08-10 09：45：10</td>
@@ -752,9 +666,10 @@
                                         <td class="hidden-xs">未完成</td>
                                         <td class="hidden-xs">重庆</td>
                                         <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                        <td class="hidden-xs text-center"><a href="">查看</a></td>
                                     </tr>
-                                   <tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
                                         <td class="text-center">SMW48575468959</td>
                                         <td class="font-w600">SMWTHH85425155</td>
                                         <td class="hidden-xs">2016-08-10 09：45：10</td>
@@ -762,9 +677,10 @@
                                         <td class="hidden-xs">未完成</td>
                                         <td class="hidden-xs">重庆</td>
                                         <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                        <td class="hidden-xs text-center"><a href="">查看</a></td>
                                     </tr>
-                                   <tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
                                         <td class="text-center">SMW48575468959</td>
                                         <td class="font-w600">SMWTHH85425155</td>
                                         <td class="hidden-xs">2016-08-10 09：45：10</td>
@@ -772,7 +688,7 @@
                                         <td class="hidden-xs">未完成</td>
                                         <td class="hidden-xs">重庆</td>
                                         <td class="hidden-xs">重庆飘瑞斯特贸易有限公司</td> 
-                                        <td class="hidden-xs"><a href="">查看</a></td>
+                                        <td class="hidden-xs text-center"><a href="">查看</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -781,27 +697,27 @@
                             <!-- 退换货信息查看-已完成 -->
                             <div class="returninfo-complete-view">
                                 <div class="returninfo-complete-order">
-                                    <h4>退换货信息</h4>
+                                    <h4>换货信息</h4>
                                     <table class="table table-bordered">
                                         <tbody>
                                             <tr>
                                                 <th>订单状态</th>
                                                 <td>未完成</td>
-                                                <th>退换货订单号</th>
+                                                <th>换货订单号</th>
                                                 <td>SMW48575468959</td>
                                                 <th>订单号</th>
                                                 <td>SMW48575468959</td>
                                             </tr>
                                             <tr>
-                                                <th>退货时间</th>
+                                                <th>换货时间</th>
                                                 <td>2016-08-10 09:15:12</td>
-                                                <th>退货人</th>
+                                                <th>换货人</th>
                                                 <td>张佳</td>
-                                                <th>退货电话</th>
+                                                <th>换货电话</th>
                                                 <td>13659875412</td>
                                             </tr>
                                             <tr>
-                                                <th>退货地址</th>
+                                                <th>换货地址</th>
                                                 <td>重庆市中海凯旋门5号楼</td>
                                                 <th>所属区域</th>
                                                 <td>重庆</td>

@@ -1,5 +1,4 @@
 
-
 fs.config(function($stateProvider, $urlRouterProvider) {
 
 
@@ -18,7 +17,6 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
             'main': {
                 templateUrl: '../../templates/users/login.html',
-                // controller: 'navigation'
                 controller: 'login'
             },
         },
@@ -81,8 +79,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
             'main@': {
                 templateUrl: '../../templates/provider.html',
-                // controller: 'navigation'
-                // controller: 'provider'
+                controller: 'provider'
             },
         },
     })
@@ -115,10 +112,7 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
             'main@': {
                 templateUrl: '../../templates/provider_details.html',
-                // controller: 'navigation'
-                controller: function() {
-                    g.domReady();                  
-                }
+                controller: 'provider'
             },
         },
     })
@@ -150,7 +144,6 @@ fs.config(function($stateProvider, $urlRouterProvider) {
 
             'main@': {
                 templateUrl: '../../templates/appeal.html',
-                // controller: 'navigation'
                 controller: function() {
                     g.domReady();                  
                 }
@@ -213,8 +206,10 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             },
 
             'main@': {
+
                 templateUrl: '../../templates/purchase_details.html',
                 controller: function() {
+
                     g.domReady();                  
                 }
             },
@@ -244,9 +239,11 @@ fs.config(function($stateProvider, $urlRouterProvider) {
             },
 
             'main@': {
+
                 templateUrl: '../../templates/returngoods.html',
                 controller: function() {
-                    g.domReady();                  
+                    g.domReady();  
+                                    
                 }
             },
         },

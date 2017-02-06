@@ -9,7 +9,6 @@ fs.controller("dashboard", function($scope, $location, $http, fs) {
 		$location.path("login");
 
 	}
-
 	// console.log(123)
 
 })

@@ -109,6 +109,9 @@
         <script type="text/javascript" src="assets/js/angular/ngDialog/ngDialog.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="assets/js/angular/ngDialog/ngDialog.css">
+
+        <script src="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
         
         <!-- angularJs end -->
 
@@ -137,6 +140,7 @@
             $(function () {
                 // Init page helpers (Slick Slider plugin)
                 App.initHelpers('slick');
+                App.initHelpers(['datepicker', 'colorpicker']);
             });
         </script>
     </body>
